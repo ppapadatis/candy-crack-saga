@@ -1,110 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Candy Crack</title>
 
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Candy Crack</title>
 
-        <!-- Custom CSS -->
-        <style>
-        body {
-            padding-top: 70px;
-            /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-        }
-        </style>
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+		<!-- Custom CSS -->
+		<style>
+			body {
+				padding-top: 70px;
+				/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+			}
+		</style>
 
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="javascript:void(0)">Candy Crack</a>
-                </div>
-            </div>
-            <!-- /.container -->
-        </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-horizontal">
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="userid">User ID</label>
-                            <div class="col-lg-10">
-                                <input type="text" name="userid" id="userid" class="form-control" placeholder="Enter User ID"/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="session">Session</label>
-                            <div class="col-lg-10">
-                                <input type="text" name="session" id="session" class="form-control" placeholder="Enter Session"/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="episode">Episode</label>
-                            <div class="col-lg-10">
-                                <input type="text" name="episode" id="episode" class="form-control" placeholder="Enter Episode"/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="level">Level</label>
-                            <div class="col-lg-10">
-                                <input type="text" name="level" id="level" class="form-control" placeholder="Enter Level"/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="score">Score</label>
-                            <div class="col-lg-10">
-                                <input type="text" name="score" id="score" class="form-control" placeholder="Enter Score"/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="seed">Seed</label>
-                            <div class="col-lg-10">
-                                <input type="text" name="seed" id="seed" class="form-control" value="1364853349886" disabled/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" for="cs">CS</label>
-                            <div class="col-lg-10">
-                                <input type="text" name="cs" id="cs" class="form-control" disabled/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div id="alertbox" class="col-lg-10 col-lg-offset-2">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-lg-10 col-lg-offset-2">
-                                <input type="button" class="btn btn-primary" value="Complete Level" id="completeLevelButton"/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-        <!-- jQuery Version 1.11.1 -->
-        <script src="js/jquery.js"></script>
-        <!-- Modernizr Version 2.8.3 -->
-        <script src="js/modernizr.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.md5.js"></script>
-        <script src="js/candycrack.js"></script>
-    </body>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-68411270-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+
+	</head>
+
+	<body>
+		<!-- Navigation -->
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="javascript:void(0)">Candy Crack</a>
+				</div>
+			</div>
+			<!-- /.container -->
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="form-horizontal">
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="userid">User ID</label>
+							<div class="col-lg-10">
+								<input type="text" name="userid" id="userid" class="form-control" placeholder="Enter User ID" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="session">Session</label>
+							<div class="col-lg-10">
+								<input type="text" name="session" id="session" class="form-control" placeholder="Enter Session" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="episode">Episode</label>
+							<div class="col-lg-10">
+								<input type="text" name="episode" id="episode" class="form-control" placeholder="Enter Episode" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="level">Level</label>
+							<div class="col-lg-10">
+								<input type="text" name="level" id="level" class="form-control" placeholder="Enter Level" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="score">Score</label>
+							<div class="col-lg-10">
+								<input type="text" name="score" id="score" class="form-control" placeholder="Enter Score" />
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="seed">Seed</label>
+							<div class="col-lg-10">
+								<input type="text" name="seed" id="seed" class="form-control" value="1364853349886" disabled/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-2 control-label" for="cs">CS</label>
+							<div class="col-lg-10">
+								<input type="text" name="cs" id="cs" class="form-control" disabled/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div id="alertbox" class="col-lg-10 col-lg-offset-2">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-10 col-lg-offset-2">
+								<input type="button" class="btn btn-primary" value="Complete Level" id="completeLevelButton" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery Version 1.11.1 -->
+		<script src="js/jquery.js"></script>
+		<!-- Modernizr Version 2.8.3 -->
+		<script src="js/modernizr.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.md5.js"></script>
+		<script src="js/candycrack.js"></script>
+	</body>
+
 </html>
