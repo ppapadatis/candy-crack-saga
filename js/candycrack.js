@@ -41,9 +41,10 @@ CandyCrack = function() {
 		params.arg0 = JSON.stringify(data);
 		params._session = session;
 
+		// CORS issue: cannot read response from candycrush.
 		$.get(url, params, function(data) {
 			self.alertbox.html(JSON.stringify(data));
-		}).done(function(a,b,c) {
+		}).done(function() {
 			self.alertbox.html(generateAlert('success', 'Level successfully completed!'));
 		}).fail(function() {
 			self.alertbox.html(generateAlert('danger', 'Oops! Something went wrong!'));
